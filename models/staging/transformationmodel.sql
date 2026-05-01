@@ -1,4 +1,5 @@
-Create OR Replace View OrderperCuastomers as (
+{{ config(materialized='view') }}
+    
 SELECT
     C.CustomerName,
     DATEPART(YEAR, O.OrderDate) AS OrderYear,
@@ -15,4 +16,4 @@ ORDER BY
     C.CustomerName,
     OrderYear,
     OrderMonth;
-)
+

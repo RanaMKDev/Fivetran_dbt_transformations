@@ -7,7 +7,7 @@ profile: 'Databricks'
 model-paths: ["models"]
 
 models:
-  databricks_project:
+  Analytics:
     staging:
       +materialized: view
     marts:

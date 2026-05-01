@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: DatabricksDWH
+    database: DatabricksWarehouse
+    schema: DatabricksWarehouse
+
+    tables:
+      - name: Sales.Customers
+      - name: Sales.Orders

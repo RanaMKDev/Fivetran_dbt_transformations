@@ -5,8 +5,8 @@ SELECT
     DATEPART(YEAR, O.OrderDate) AS OrderYear,
     DATEPART(MONTH, O.OrderDate) AS OrderMonth,
     COUNT(O.OrderID) AS OrderCount
-FROM Sales.Customers C
-INNER JOIN Sales.Orders O 
+FROM DatabricksWarehouse.Sales.Customers C
+INNER JOIN DatabricksWarehouse.Sales.Orders O 
     ON C.CustomerID = O.CustomerID
 GROUP BY 
     C.CustomerName,

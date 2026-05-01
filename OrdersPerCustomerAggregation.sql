@@ -1,4 +1,4 @@
-Create table OrderperCuastomers as (
+Create OR Replace View OrderperCuastomers as (
 SELECT
     C.CustomerName,
     DATEPART(YEAR, O.OrderDate) AS OrderYear,

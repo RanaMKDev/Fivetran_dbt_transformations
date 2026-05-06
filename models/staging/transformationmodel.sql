@@ -6,7 +6,7 @@ SELECT
     MONTH(O.OrderDate) AS OrderMonth,
     COUNT(O.OrderID) AS OrderCount
 FROM `rmkdatabrickswksp`.`sales`.`customers` C
-INNER JOIN `rmkdatabrickswksp`.`sales`.`sales_orders` O 
+INNER JOIN `rmkdatabrickswksp`.`sales`.`orders` O 
     ON C.CustomerID = O.CustomerID
 GROUP BY 
     C.CustomerName,
